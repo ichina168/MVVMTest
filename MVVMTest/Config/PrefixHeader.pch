@@ -1,0 +1,23 @@
+//
+//  PrefixHeader.pch
+//  MVVMTest
+//
+//  Created by Allen on 2017/4/21.
+//  Copyright © 2017年 Allen. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import "Config.h"
+#import "AFNetworking.h"
+#import "UIKit+AFNetworking.h"
+#import "NetRequestClass.h"
+#import "GTViewModelClass.h"
+
+
+#endif /* PrefixHeader_pch */
