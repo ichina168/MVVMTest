@@ -14,15 +14,14 @@
 #pragma POST请求
 + (void) NetRequestPOSTWithRequestURL: (NSString *) requestURLString
                         WithParameter: (NSDictionary *) parameter
-                 WithReturnValeuBlock: (ReturnValueBlock) block
-                   WithErrorCodeBlock: (ErrorCodeBlock) errorBlock
-                     WithFailureBlock: (FailureBlock) failureBlock;
+                          withLoading: (BOOL) isLoading
+                 WithReturnValeuBlock: (ReturnValueBlock) block;
 
 #pragma GET请求
 + (void) NetRequestGETWithRequestURL: (NSString *) requestURLString
                         WithParameter: (NSDictionary *) parameter
+                         withLoading: (BOOL) isLoading
                 WithReturnValeuBlock: (ReturnValueBlock) block
-                  WithErrorCodeBlock: (ErrorCodeBlock) errorBlock
-                    WithFailureBlock: (FailureBlock) failureBlock;
+                         withLoading: (BOOL) isLoading;
 
 @end

@@ -19,6 +19,8 @@ PODS:
     - JSPatch/Core (= 1.1.3)
   - JSPatch/Core (1.1.3)
   - Masonry (0.6.4)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
   - ReactiveCocoa/Core (2.5):
@@ -36,6 +38,8 @@ DEPENDENCIES:
   - JSONModel (~> 1.0.1)
   - JSPatch
   - Masonry (~> 0.6.1)
+  - MJExtension
+  - MJRefresh
   - ReactiveCocoa (~> 2.5)
   - SDWebImage (~> 3.7.5)
   - YYCache
@@ -45,10 +49,12 @@ SPEC CHECKSUMS:
   JSONModel: 6ffcb4ffa3659c9e9a2e5d45d6c7705bab187c03
   JSPatch: 02cfed591cb907bbfe80a346666e5a35fc2d349d
   Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: e128e5f5a3ed505917b45068b584888321274996
+PODFILE CHECKSUM: 1b2ceefd99351253a3ae9f75d61d096f8727218e
 
 COCOAPODS: 1.2.1

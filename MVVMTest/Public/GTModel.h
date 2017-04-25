@@ -10,4 +10,6 @@
 
 @interface GTModel : NSObject
 
+@property (nonatomic, copy)NSString *result;
+@property (nonatomic, copy)NSString *message;
 @end
