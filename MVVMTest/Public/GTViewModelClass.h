@@ -2,6 +2,7 @@
 //  ViewModelClass.h
 //  MVVMTest
 //
+//
 
 //Kicking off network or database requests
 //Determining when information should be hidden or shown

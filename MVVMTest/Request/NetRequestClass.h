@@ -2,6 +2,7 @@
 //  NetRequestClass.h
 //  MVVMTest
 //
+//
 
 #import <Foundation/Foundation.h>
 

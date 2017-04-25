@@ -1,6 +1,5 @@
 //
 //  NetRequestClass.m
-//  MVVMTest
 //
 //
 
