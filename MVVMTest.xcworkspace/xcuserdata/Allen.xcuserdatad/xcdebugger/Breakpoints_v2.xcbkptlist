@@ -14,9 +14,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "-fetchPublicWeibo"
-            landmarkType = "7">
+            endingLineNumber = "18">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -46,89 +44,7 @@
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "-fetchValueSuccessWithDic:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MVVMTest/Request/NetRequestClass.m"
-            timestampString = "514704789.075739"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "+NetRequestGETWithRequestURL:WithParameter:WithReturnValeuBlock:WithErrorCodeBlock:WithFailureBlock:"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "+[NetRequestClass NetRequestGETWithRequestURL:WithParameter:WithReturnValeuBlock:WithErrorCodeBlock:WithFailureBlock:]"
-                  moduleName = "MVVMTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Allen/Documents/Objc_Workspace/MVVMTest/MVVMTest/Request/NetRequestClass.m"
-                  timestampString = "514704789.080373"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "267">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__118+[NetRequestClass NetRequestGETWithRequestURL:WithParameter:WithReturnValeuBlock:WithErrorCodeBlock:WithFailureBlock:]_block_invoke"
-                  moduleName = "MVVMTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/Allen/Documents/Objc_Workspace/MVVMTest/MVVMTest/Request/NetRequestClass.m"
-                  timestampString = "514704789.082314"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MVVMTest/Request/NetRequestClass.m"
-            timestampString = "514704793.226887"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "+NetRequestGETWithRequestURL:WithParameter:WithReturnValeuBlock:WithErrorCodeBlock:WithFailureBlock:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MVVMTest/Request/NetRequestClass.m"
-            timestampString = "514704797.34495"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "75"
-            endingLineNumber = "75"
-            landmarkName = "+NetRequestGETWithRequestURL:WithParameter:WithReturnValeuBlock:WithErrorCodeBlock:WithFailureBlock:"
-            landmarkType = "7">
+            endingLineNumber = "35">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
