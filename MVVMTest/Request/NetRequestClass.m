@@ -62,7 +62,6 @@
                     WithFailureBlock: (FailureBlock) failureBlock
 {
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] init];
-//    AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] init];
     
     [manager GET:requestURLString parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
@@ -75,20 +74,6 @@
         failureBlock();
     }];
     
-//    AFHTTPRequestOperation *op = [manager GET:requestURLString parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
-//        DDLog(@"%@", dic);
-//        
-//        block(dic);
-//        
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        NSLog(@"%@", [error description]);
-//        failureBlock();
-//    }];
-//    
-//    op.responseSerializer = [AFHTTPResponseSerializer serializer];
-//    
-//    [op start];
     
 }
 
@@ -112,26 +97,6 @@
         NSLog(@"%@", [error description]);
         failureBlock();
     }];
-    
-//    AFHTTPRequestOperation *op = [manager POST:requestURLString parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
-//        NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
-//        
-//        DDLog(@"%@", dic);
-//        
-//        block(dic);
-//        /***************************************
-//         在这做判断如果有dic里有errorCode
-//         调用errorBlock(dic)
-//         没有errorCode则调用block(dic
-//         ******************************/
-//        
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        failureBlock();
-//    }];
-//    
-//    op.responseSerializer = [AFHTTPResponseSerializer serializer];
-//    
-//    [op start];
 
 }
 
