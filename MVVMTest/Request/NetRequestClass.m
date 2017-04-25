@@ -18,9 +18,6 @@
     NSURL *baseURL = [NSURL URLWithString:strUrl];
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL];
-    
-//    AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:baseURL];
-    
     NSOperationQueue *operationQueue = manager.operationQueue;
     
     [manager.reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
