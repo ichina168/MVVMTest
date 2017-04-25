@@ -15,15 +15,6 @@
 {
     //1.创建网络监测者
     AFNetworkReachabilityManager *manager = [AFNetworkReachabilityManager sharedManager];
-    
-    /*枚举里面四个状态  分别对应 未知 无网络 数据 WiFi
-     typedef NS_ENUM(NSInteger, AFNetworkReachabilityStatus) {
-     AFNetworkReachabilityStatusUnknown          = -1,      未知
-     AFNetworkReachabilityStatusNotReachable     = 0,       无网络
-     AFNetworkReachabilityStatusReachableViaWWAN = 1,       蜂窝数据网络
-     AFNetworkReachabilityStatusReachableViaWiFi = 2,       WiFi
-     };
-     */
     __block BOOL netState = false;
     
     [manager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
@@ -66,8 +57,7 @@
 + (void) NetRequestGETWithRequestURL: (NSString *) requestURLString
                        WithParameter: (NSDictionary *) parameter
                 WithReturnValeuBlock: (ReturnValueBlock) block
-                  WithErrorCodeBlock: (ErrorCodeBlock) errorBlock
-                    WithFailureBlock: (FailureBlock) failureBlock
+                         withLoading: (BOOL) isLoading
 {
     AFHTTPSessionManager *manager = [self manager];
     [manager GET:requestURLString parameters:parameter progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -79,7 +69,6 @@
         block(dic);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@", [error description]);
-        failureBlock();
     }];
     
     
@@ -89,8 +78,8 @@
 + (void) NetRequestPOSTWithRequestURL: (NSString *) requestURLString
                         WithParameter: (NSDictionary *) parameter
                  WithReturnValeuBlock: (ReturnValueBlock) block
-                   WithErrorCodeBlock: (ErrorCodeBlock) errorBlock
-                     WithFailureBlock: (FailureBlock) failureBlock
+                          withLoading: (BOOL) isLoading
+
 {
     AFHTTPSessionManager *manager = [self manager];
     [manager POST:requestURLString parameters:parameter progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -98,17 +87,16 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
-        
         DDLog(@"%@", dic);
-        
         block(dic);
-        
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@", [error description]);
-        failureBlock();
+        
     }];
 
 }
+
+
 
 
 + (AFHTTPSessionManager *)manager{

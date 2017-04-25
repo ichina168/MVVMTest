@@ -21,10 +21,6 @@
     PublicWeiboViewModel *publicViewModel = [[PublicWeiboViewModel alloc] init];
     [publicViewModel setBlockWithReturnBlock:^(id returnValue) {
         _publicModelArray = returnValue;
-    } WithErrorBlock:^(id errorCode) {
-        //错误获取
-    } WithFailureBlock:^{
-        //错误
     }];
     [publicViewModel fetchPublicWeibo];
 }
