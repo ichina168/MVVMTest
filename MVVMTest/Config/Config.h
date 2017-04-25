@@ -13,6 +13,8 @@ typedef void (^ErrorCodeBlock) (id errorCode);
 typedef void (^FailureBlock)();
 typedef void (^NetWorkBlock)(BOOL netConnetState);
 
+#define kTimeOutInterval 30
+
 #define DDLog(xx, ...)  NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
 //accessToken

@@ -39,22 +39,20 @@
         NSDateFormatter *iosDateFormater=[[NSDateFormatter alloc]init];
         iosDateFormater.dateFormat=@"EEE MMM d HH:mm:ss Z yyyy";
         
-//        //必须设置，否则无法解析
-//        iosDateFormater.locale=[[NSLocale alloc]initWithLocaleIdentifier:@"en_US"];
-//        NSDate *date=[iosDateFormater dateFromString:statuses[i][CREATETIME]];
-//        
-//        //目的格式
-//        NSDateFormatter *resultFormatter=[[NSDateFormatter alloc]init];
-//        [resultFormatter setDateFormat:@"MM月dd日 HH:mm"];
-//        
-//        publicModel.date = [resultFormatter stringFromDate:date];
-//        publicModel.userName = statuses[i][USER][USERNAME];
-//        publicModel.text = statuses[i][WEIBOTEXT];
-//        publicModel.imageUrl = [NSURL URLWithString:statuses[i][USER][HEADIMAGEURL]];
-//        publicModel.userId = statuses[i][USER][UID];
-//        publicModel.weiboId = statuses[i][WEIBOID];
-        
+        //必须设置，否则无法解析
+        iosDateFormater.locale=[[NSLocale alloc]initWithLocaleIdentifier:@"en_US"];
+        NSDate *date=[iosDateFormater dateFromString:statues[i][CREATETIME]];
+        //目的格式
+        NSDateFormatter *resultFormatter=[[NSDateFormatter alloc]init];
+        [resultFormatter setDateFormat:@"MM月dd日 HH:mm"];
+        publicModel.date = [resultFormatter stringFromDate:date];
+        publicModel.userName = statues[i][USER][USERNAME];
+        publicModel.text = statues[i][WEIBOTEXT];
+        publicModel.imageUrl = [NSURL URLWithString:statues[i][USER][HEADIMAGEURL]];
+        publicModel.userId = statues[i][USER][UID];
+        publicModel.weiboId = statues[i][WEIBOID];
         [publicModelArray addObject:publicModel];
+        
     }
     self.returnBlock(publicModelArray);
 }
