@@ -18,12 +18,9 @@
 
 #pragma 接收穿过来的block
 -(void) setBlockWithReturnBlock: (ReturnValueBlock) returnBlock
-                 WithErrorBlock: (ErrorCodeBlock) errorBlock
-               WithFailureBlock: (FailureBlock) failureBlock
+
 {
     _returnBlock = returnBlock;
-    _errorBlock = errorBlock;
-    _failureBlock = failureBlock;
 }
 
 @end

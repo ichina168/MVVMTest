@@ -17,12 +17,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    PublicWeiboViewModel *publicViewModel = [[PublicWeiboViewModel alloc] init];
-    [publicViewModel setBlockWithReturnBlock:^(id returnValue) {
-        _publicModelArray = returnValue;
+    
+
+//    // Do any additional setup after loading the view, typically from a nib.
+//    PublicWeiboViewModel *publicViewModel = [[PublicWeiboViewModel alloc] init];
+//    [publicViewModel setBlockWithReturnBlock:^(id returnValue) {
+//        _publicModelArray = returnValue;
+//    }];
+//    
+//    [publicViewModel fetchPublicWeibo];
+    
+    
+    NSDictionary *para = @{TOKEN:@"18317037038",
+                           COUNT:@"123456"};
+    [SVProgressHUD show];
+    [NetRequestClass NetRequestPOSTWithRequestURL:REQUESTPUBLICURL WithParameter:para withLoading:YES WithReturnValeuBlock:^(id returnValue) {
+        //DDLog(@"%@",returnValue);
+        [SVProgressHUD dismiss];
     }];
-    [publicViewModel fetchPublicWeibo];
+
 }
 
 

@@ -5,6 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SVProgressHUD.h"
 
 @interface NetRequestClass : NSObject
 
@@ -21,7 +22,6 @@
 + (void) NetRequestGETWithRequestURL: (NSString *) requestURLString
                         WithParameter: (NSDictionary *) parameter
                          withLoading: (BOOL) isLoading
-                WithReturnValeuBlock: (ReturnValueBlock) block
-                         withLoading: (BOOL) isLoading;
+                WithReturnValeuBlock: (ReturnValueBlock) block;
 
 @end

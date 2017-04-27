@@ -57,8 +57,8 @@
 #pragma --mark GET请求方式
 + (void) NetRequestGETWithRequestURL: (NSString *) requestURLString
                        WithParameter: (NSDictionary *) parameter
-                WithReturnValeuBlock: (ReturnValueBlock) block
                          withLoading: (BOOL) isLoading
+                WithReturnValeuBlock: (ReturnValueBlock) block
 {
     AFHTTPSessionManager *manager = [self manager];
     [manager GET:requestURLString parameters:parameter progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -78,21 +78,22 @@
 #pragma --mark POST请求方式
 + (void) NetRequestPOSTWithRequestURL: (NSString *) requestURLString
                         WithParameter: (NSDictionary *) parameter
-                 WithReturnValeuBlock: (ReturnValueBlock) block
                           withLoading: (BOOL) isLoading
-
+                 WithReturnValeuBlock: (ReturnValueBlock) block
 {
+    DDLog(@"请求:%@---%@",requestURLString,parameter);
     AFHTTPSessionManager *manager = [self manager];
+    [SVProgressHUD show];
     [manager POST:requestURLString parameters:parameter progress:^(NSProgress * _Nonnull downloadProgress) {
-        
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
         DDLog(@"%@", dic);
         block(dic);
+        [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"%@", [error description]);
-        
+        NSLog(@"Faiure%@", [error description]);
+        [SVProgressHUD dismiss];
     }];
 
 }
@@ -106,7 +107,6 @@
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     return manager;
-    
 }
 
 @end
