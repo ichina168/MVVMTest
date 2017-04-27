@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F95A6211EB1D98400901794 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F95A6201EB1D98400901794 /* Utils.m */; };
 		9F96DFC61EA9E28A001105CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96DFC51EA9E28A001105CA /* main.m */; };
 		9F96DFC91EA9E28A001105CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96DFC81EA9E28A001105CA /* AppDelegate.m */; };
 		9F96DFCF1EA9E28A001105CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F96DFCD1EA9E28A001105CA /* Main.storyboard */; };
@@ -25,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		170EE3003F89E8A0F2C4A693 /* Pods-MVVMTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMTest/Pods-MVVMTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9F95A61F1EB1D98400901794 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		9F95A6201EB1D98400901794 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		9F96DFC11EA9E28A001105CA /* MVVMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F96DFC51EA9E28A001105CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9F96DFC71EA9E28A001105CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -191,6 +194,8 @@
 		9F96E0151EA9EAFF001105CA /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				9F95A61F1EB1D98400901794 /* Utils.h */,
+				9F95A6201EB1D98400901794 /* Utils.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FCBD3341EAF5400000DF29F /* ViewController.m in Sources */,
+				9F95A6211EB1D98400901794 /* Utils.m in Sources */,
 				9F96E0421EA9EAFF001105CA /* NetRequestClass.m in Sources */,
 				9F96DFC91EA9E28A001105CA /* AppDelegate.m in Sources */,
 				9F96E0581EA9EB27001105CA /* GTViewController.m in Sources */,

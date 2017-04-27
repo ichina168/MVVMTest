@@ -75,10 +75,8 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [SVProgressHUD dismiss];
         NSLog(@"%@", [error description]);
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:[error description] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
-
-    }];
+        [Utils showAlert:[error description]];
+        }];
     
     
 }
@@ -104,8 +102,7 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [SVProgressHUD dismiss];
         NSLog(@"Faiure%@", [error description]);
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:[error description] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [alert show];
+        [Utils showAlert:[error description]];
     }];
 
 }
