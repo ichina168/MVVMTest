@@ -11,7 +11,7 @@
 typedef void (^ReturnValueBlock) (id returnValue);
 typedef void (^NetWorkBlock)(BOOL netConnetState);
 
-#define kTimeOutInterval 60
+#define kTimeOutInterval 30
 
 #define DDLog(xx, ...)  NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 
@@ -19,8 +19,8 @@ typedef void (^NetWorkBlock)(BOOL netConnetState);
 #define ACCESSTOKEN @"2.00NofgBD0L1k4pc584f79cc48SKGdD"
 
 //请求公共微博的网络接口
-#define REQUESTPUBLICURL @"https://app.greentree.cn/Member/login_v320"
-//@"http://10.3.80.4:8060/Member/login_v320"
+#define REQUESTPUBLICURL @"http://10.3.90.5:8060/Member/login_v320"
+//@"http://10.3.90.4:8060/Member/login_v320"
 
 #define SOURCE @"source"
 #define TOKEN @"phone"

@@ -15,8 +15,6 @@
 		9F96DFD71EA9E28A001105CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F96DFD51EA9E28A001105CA /* LaunchScreen.storyboard */; };
 		9F96E0041EA9EADE001105CA /* GTViewModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E0031EA9EADE001105CA /* GTViewModelClass.m */; };
 		9F96E0421EA9EAFF001105CA /* NetRequestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E0131EA9EAFF001105CA /* NetRequestClass.m */; };
-		9F96E04C1EA9EAFF001105CA /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9F96E02C1EA9EAFF001105CA /* SVProgressHUD.bundle */; };
-		9F96E04D1EA9EAFF001105CA /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E02E1EA9EAFF001105CA /* SVProgressHUD.m */; };
 		9F96E0581EA9EB27001105CA /* GTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E0571EA9EB27001105CA /* GTViewController.m */; };
 		9F96E05B1EA9EB52001105CA /* GTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E05A1EA9EB52001105CA /* GTModel.m */; };
 		9FCBD3321EAF5400000DF29F /* PublicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD32A1EAF5400000DF29F /* PublicModel.m */; };
@@ -41,9 +39,6 @@
 		9F96E0061EA9EAFF001105CA /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		9F96E0121EA9EAFF001105CA /* NetRequestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequestClass.h; sourceTree = "<group>"; };
 		9F96E0131EA9EAFF001105CA /* NetRequestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequestClass.m; sourceTree = "<group>"; };
-		9F96E02C1EA9EAFF001105CA /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
-		9F96E02D1EA9EAFF001105CA /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
-		9F96E02E1EA9EAFF001105CA /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
 		9F96E0561EA9EB27001105CA /* GTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTViewController.h; sourceTree = "<group>"; };
 		9F96E0571EA9EB27001105CA /* GTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTViewController.m; sourceTree = "<group>"; };
 		9F96E0591EA9EB52001105CA /* GTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTModel.h; sourceTree = "<group>"; };
@@ -114,7 +109,6 @@
 				9F96E0111EA9EAFF001105CA /* Request */,
 				9F96E0141EA9EAFF001105CA /* Resourse */,
 				9F96E0151EA9EAFF001105CA /* Tools */,
-				9F96E0161EA9EAFF001105CA /* Vendor */,
 				9F96E0011EA9EADE001105CA /* PublicTemplate */,
 				9F96DFC71EA9E28A001105CA /* AppDelegate.h */,
 				9F96DFC81EA9E28A001105CA /* AppDelegate.m */,
@@ -199,24 +193,6 @@
 			children = (
 			);
 			path = Tools;
-			sourceTree = "<group>";
-		};
-		9F96E0161EA9EAFF001105CA /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-				9F96E02B1EA9EAFF001105CA /* SVProgressHUD */,
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		9F96E02B1EA9EAFF001105CA /* SVProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				9F96E02C1EA9EAFF001105CA /* SVProgressHUD.bundle */,
-				9F96E02D1EA9EAFF001105CA /* SVProgressHUD.h */,
-				9F96E02E1EA9EAFF001105CA /* SVProgressHUD.m */,
-			);
-			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		9FCBD3281EAF5400000DF29F /* Model */ = {
@@ -318,7 +294,6 @@
 				9F96DFD71EA9E28A001105CA /* LaunchScreen.storyboard in Resources */,
 				9F96DFD41EA9E28A001105CA /* Assets.xcassets in Resources */,
 				9F96DFCF1EA9E28A001105CA /* Main.storyboard in Resources */,
-				9F96E04C1EA9EAFF001105CA /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +361,6 @@
 				9F96E0041EA9EADE001105CA /* GTViewModelClass.m in Sources */,
 				9FCBD3331EAF5400000DF29F /* PublicWeiboViewModel.m in Sources */,
 				9FCBD3321EAF5400000DF29F /* PublicModel.m in Sources */,
-				9F96E04D1EA9EAFF001105CA /* SVProgressHUD.m in Sources */,
 				9F96DFD21EA9E28A001105CA /* MVVMTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

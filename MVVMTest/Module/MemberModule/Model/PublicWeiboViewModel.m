@@ -12,8 +12,8 @@
 
 
 - (void)fetchPublicWeibo{
-    NSDictionary *para = @{TOKEN:ACCESSTOKEN,
-                           COUNT:@"100"};
+    NSDictionary *para = @{TOKEN:@"18317037038",
+                           COUNT:@"123456"};
     
     [NetRequestClass NetRequestPOSTWithRequestURL:REQUESTPUBLICURL WithParameter:para withLoading:YES WithReturnValeuBlock:^(id returnValue) {
         DDLog(@"%@",returnValue);

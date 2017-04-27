@@ -10,5 +10,6 @@ pod 'MJRefresh'
 pod 'MJExtension'
 pod 'YYCache'
 pod 'JSPatch'
+pod 'SVProgressHUD'
 
 end

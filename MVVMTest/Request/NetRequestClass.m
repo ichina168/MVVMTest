@@ -61,15 +61,23 @@
                 WithReturnValeuBlock: (ReturnValueBlock) block
 {
     AFHTTPSessionManager *manager = [self manager];
+    if (isLoading) {
+        [SVProgressHUD show];
+    }
     [manager GET:requestURLString parameters:parameter progress:^(NSProgress * _Nonnull downloadProgress) {
         
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        [SVProgressHUD dismiss];
         NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
         DDLog(@"%@", dic);
         block(dic);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [SVProgressHUD dismiss];
         NSLog(@"%@", [error description]);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:[error description] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+
     }];
     
     
@@ -83,7 +91,9 @@
 {
     DDLog(@"请求:%@---%@",requestURLString,parameter);
     AFHTTPSessionManager *manager = [self manager];
-    [SVProgressHUD show];
+    if (isLoading) {
+        [SVProgressHUD show];
+    }
     [manager POST:requestURLString parameters:parameter progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -92,8 +102,10 @@
         block(dic);
         [SVProgressHUD dismiss];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"Faiure%@", [error description]);
         [SVProgressHUD dismiss];
+        NSLog(@"Faiure%@", [error description]);
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:[error description] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
     }];
 
 }

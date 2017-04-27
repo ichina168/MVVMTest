@@ -23,5 +23,4 @@
                         WithParameter: (NSDictionary *) parameter
                          withLoading: (BOOL) isLoading
                 WithReturnValeuBlock: (ReturnValueBlock) block;
-
 @end
