@@ -17,6 +17,7 @@
 #import "Utils.h"
 #import "AFNetworking.h"
 #import "UIKit+AFNetworking.h"
+#import "MJExtension.h"
 #import "NetRequestClass.h"
 #import "GTViewModelClass.h"
 

@@ -7,7 +7,6 @@
 //
 
 #import "UserinfoViewModel.h"
-#import "MJExtension.h"
 
 @implementation UserInfoViewModel : GTViewModelClass
 
