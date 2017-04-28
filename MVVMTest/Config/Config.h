@@ -19,7 +19,7 @@ typedef void (^NetWorkBlock)(BOOL netConnetState);
 #define ACCESSTOKEN @"2.00NofgBD0L1k4pc584f79cc48SKGdD"
 
 //请求公共微博的网络接口
-#define REQUESTPUBLICURL @"http://10.3.90.5:8060/Member/login_v320"
+#define REQUESTPUBLICURL @"http://10.3.90.4:8060/Member/login_v320"
 //@"http://10.3.90.4:8060/Member/login_v320"
 
 #define SOURCE @"source"

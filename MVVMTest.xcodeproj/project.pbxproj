@@ -18,8 +18,8 @@
 		9F96E0421EA9EAFF001105CA /* NetRequestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E0131EA9EAFF001105CA /* NetRequestClass.m */; };
 		9F96E0581EA9EB27001105CA /* GTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E0571EA9EB27001105CA /* GTViewController.m */; };
 		9F96E05B1EA9EB52001105CA /* GTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E05A1EA9EB52001105CA /* GTModel.m */; };
-		9FCBD3321EAF5400000DF29F /* PublicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD32A1EAF5400000DF29F /* PublicModel.m */; };
-		9FCBD3331EAF5400000DF29F /* PublicWeiboViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD32C1EAF5400000DF29F /* PublicWeiboViewModel.m */; };
+		9FCBD3321EAF5400000DF29F /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD32A1EAF5400000DF29F /* UserModel.m */; };
+		9FCBD3331EAF5400000DF29F /* UserInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD32C1EAF5400000DF29F /* UserInfoViewModel.m */; };
 		9FCBD3341EAF5400000DF29F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD3301EAF5400000DF29F /* ViewController.m */; };
 		DE1567A9DEF185DBAFD229B8 /* libPods-MVVMTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B94259586A36A1CE6AB01B74 /* libPods-MVVMTest.a */; };
 /* End PBXBuildFile section */
@@ -47,10 +47,10 @@
 		9F96E0591EA9EB52001105CA /* GTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTModel.h; sourceTree = "<group>"; };
 		9F96E05A1EA9EB52001105CA /* GTModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTModel.m; sourceTree = "<group>"; };
 		9F96E05E1EA9F30E001105CA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		9FCBD3291EAF5400000DF29F /* PublicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicModel.h; sourceTree = "<group>"; };
-		9FCBD32A1EAF5400000DF29F /* PublicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicModel.m; sourceTree = "<group>"; };
-		9FCBD32B1EAF5400000DF29F /* PublicWeiboViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PublicWeiboViewModel.h; path = ../Model/PublicWeiboViewModel.h; sourceTree = "<group>"; };
-		9FCBD32C1EAF5400000DF29F /* PublicWeiboViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PublicWeiboViewModel.m; path = ../Model/PublicWeiboViewModel.m; sourceTree = "<group>"; };
+		9FCBD3291EAF5400000DF29F /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		9FCBD32A1EAF5400000DF29F /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		9FCBD32B1EAF5400000DF29F /* UserInfoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfoViewModel.h; path = ../Model/UserInfoViewModel.h; sourceTree = "<group>"; };
+		9FCBD32C1EAF5400000DF29F /* UserInfoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfoViewModel.m; path = ../Model/UserInfoViewModel.m; sourceTree = "<group>"; };
 		9FCBD32F1EAF5400000DF29F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9FCBD3301EAF5400000DF29F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B94259586A36A1CE6AB01B74 /* libPods-MVVMTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,8 +203,8 @@
 		9FCBD3281EAF5400000DF29F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9FCBD3291EAF5400000DF29F /* PublicModel.h */,
-				9FCBD32A1EAF5400000DF29F /* PublicModel.m */,
+				9FCBD3291EAF5400000DF29F /* UserModel.h */,
+				9FCBD32A1EAF5400000DF29F /* UserModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,8 +228,8 @@
 		9FCBD3311EAF5400000DF29F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				9FCBD32B1EAF5400000DF29F /* PublicWeiboViewModel.h */,
-				9FCBD32C1EAF5400000DF29F /* PublicWeiboViewModel.m */,
+				9FCBD32B1EAF5400000DF29F /* UserInfoViewModel.h */,
+				9FCBD32C1EAF5400000DF29F /* UserInfoViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -365,8 +365,8 @@
 				9F96DFC61EA9E28A001105CA /* main.m in Sources */,
 				9F96E05B1EA9EB52001105CA /* GTModel.m in Sources */,
 				9F96E0041EA9EADE001105CA /* GTViewModelClass.m in Sources */,
-				9FCBD3331EAF5400000DF29F /* PublicWeiboViewModel.m in Sources */,
-				9FCBD3321EAF5400000DF29F /* PublicModel.m in Sources */,
+				9FCBD3331EAF5400000DF29F /* UserInfoViewModel.m in Sources */,
+				9FCBD3321EAF5400000DF29F /* UserModel.m in Sources */,
 				9F96DFD21EA9E28A001105CA /* MVVMTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

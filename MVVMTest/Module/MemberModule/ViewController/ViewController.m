@@ -7,10 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "PublicWeiboViewModel.h"
+#import "UserinfoViewModel.h"
+
 
 @interface ViewController ()
-@property (strong, nonatomic)NSArray *publicModelArray;
+{
+    UserModel *user;
+}
 @end
 
 @implementation ViewController
@@ -20,17 +23,18 @@
     
 
     // Do any additional setup after loading the view, typically from a nib.
-    PublicWeiboViewModel *publicViewModel = [[PublicWeiboViewModel alloc] init];
-    [publicViewModel setBlockWithReturnBlock:^(id returnValue) {
-        _publicModelArray = returnValue;
+    UserInfoViewModel *userInfoViewModel = [[UserInfoViewModel alloc] init];
+    [userInfoViewModel setBlockWithReturnBlock:^(id returnValue) {
+        UserModel *userModel = returnValue;
+        if (![userModel.result isEqualToString:@"0"]) {
+            [Utils showAlert:userModel.message];
+            return ;
+        }
+        DDLog(@"%@-%@-%@",userModel.result,userModel.message,userModel.responseData.idCard);
     }];
     
-    [publicViewModel fetchPublicWeibo];
-   
+    [userInfoViewModel fetchLogin];
     
-
-
-
 }
 
 

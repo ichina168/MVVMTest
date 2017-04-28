@@ -6,9 +6,13 @@
 //  Copyright © 2017年 Allen. All rights reserved.
 //
 
-#import "PublicModel.h"
+#import "UserModel.h"
 
-@implementation PublicModel
+@implementation User
 
 
+@end
+
+@implementation UserModel
+    
 @end
