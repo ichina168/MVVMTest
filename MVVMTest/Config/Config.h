@@ -18,7 +18,7 @@ typedef void (^NetWorkBlock)(BOOL netConnetState);
 //accessToken
 #define ACCESSTOKEN @"2.00NofgBD0L1k4pc584f79cc48SKGdD"
 
-//请求公共微博的网络接口
+//请求登陆接口
 #define REQUESTPUBLICURL @"http://10.3.90.4:8060/Member/login_v320"
 //@"http://10.3.90.4:8060/Member/login_v320"
 
@@ -26,13 +26,6 @@ typedef void (^NetWorkBlock)(BOOL netConnetState);
 #define TOKEN @"phone"
 #define COUNT @"password"
 
-#define STATUSES @"statuses"
-#define CREATETIME @"created_at"
-#define WEIBOID @"id"
-#define WEIBOTEXT @"text"
-#define USER @"user"
-#define UID @"id"
-#define HEADIMAGEURL @"profile_image_url"
-#define USERNAME @"screen_name"
+
 
 #endif

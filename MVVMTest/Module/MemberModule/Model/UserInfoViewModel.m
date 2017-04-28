@@ -26,7 +26,7 @@
 }
 
 - (void)userDetailWithUserModel:(UserModel *)userModel WithViewController:(UIViewController *)superController{
-
+    
 }
 
 

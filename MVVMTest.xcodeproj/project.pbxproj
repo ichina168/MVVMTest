@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F7844261EB2ED87002BF98D /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7844251EB2ED87002BF98D /* UserInfoViewController.m */; };
 		9F95A6211EB1D98400901794 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F95A6201EB1D98400901794 /* Utils.m */; };
 		9F96DFC61EA9E28A001105CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96DFC51EA9E28A001105CA /* main.m */; };
 		9F96DFC91EA9E28A001105CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96DFC81EA9E28A001105CA /* AppDelegate.m */; };
@@ -26,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		170EE3003F89E8A0F2C4A693 /* Pods-MVVMTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMTest/Pods-MVVMTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9F7844241EB2ED87002BF98D /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		9F7844251EB2ED87002BF98D /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 		9F95A61F1EB1D98400901794 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		9F95A6201EB1D98400901794 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		9F96DFC11EA9E28A001105CA /* MVVMTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -221,6 +224,8 @@
 			children = (
 				9FCBD32F1EAF5400000DF29F /* ViewController.h */,
 				9FCBD3301EAF5400000DF29F /* ViewController.m */,
+				9F7844241EB2ED87002BF98D /* UserInfoViewController.h */,
+				9F7844251EB2ED87002BF98D /* UserInfoViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -362,6 +367,7 @@
 				9F96E0421EA9EAFF001105CA /* NetRequestClass.m in Sources */,
 				9F96DFC91EA9E28A001105CA /* AppDelegate.m in Sources */,
 				9F96E0581EA9EB27001105CA /* GTViewController.m in Sources */,
+				9F7844261EB2ED87002BF98D /* UserInfoViewController.m in Sources */,
 				9F96DFC61EA9E28A001105CA /* main.m in Sources */,
 				9F96E05B1EA9EB52001105CA /* GTModel.m in Sources */,
 				9F96E0041EA9EADE001105CA /* GTViewModelClass.m in Sources */,
