@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    //NSLog(@"%f",self.window.frame.size.height);
+    //    设置状态栏的样式白色
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    //    地图
+    
+    ViewController *rootVC = [ViewController new];
+    _nav = [[UINavigationController alloc] initWithRootViewController:rootVC];
+    self.window.rootViewController = _nav;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

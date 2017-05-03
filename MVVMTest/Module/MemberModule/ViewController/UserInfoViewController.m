@@ -14,6 +14,14 @@
 
 @implementation UserInfoViewController
 
+- (void)NavigateTo:(id)param withFromClassName:(Class)c{
+    NSLog(@"%@",(UserModel *)param);
+}
+
+- (void)NavigateBack:(id)param withFromClassName:(Class)c{
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

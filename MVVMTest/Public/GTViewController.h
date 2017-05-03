@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UINavigationController+Extension.h"
 
-@interface GTViewController : UIViewController
+@interface GTViewController : UIViewController<IUINavigationController>
 
 @end

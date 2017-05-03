@@ -26,6 +26,6 @@ typedef void (^NetWorkBlock)(BOOL netConnetState);
 #define TOKEN @"phone"
 #define COUNT @"password"
 
-
+#define UserInfoVC  @"UserInfoViewController"
 
 #endif

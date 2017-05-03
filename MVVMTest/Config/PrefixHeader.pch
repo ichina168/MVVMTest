@@ -20,6 +20,9 @@
 #import "MJExtension.h"
 #import "NetRequestClass.h"
 #import "GTViewModelClass.h"
+#import "GTViewController.h"
+
+#import "UserModel.h"
 
 
 #endif /* PrefixHeader_pch */

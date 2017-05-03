@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F6C0BB81EB830640005DCB1 /* UINavigationController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C0BB71EB830640005DCB1 /* UINavigationController+Extension.m */; };
 		9F7844261EB2ED87002BF98D /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7844251EB2ED87002BF98D /* UserInfoViewController.m */; };
 		9F95A6211EB1D98400901794 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F95A6201EB1D98400901794 /* Utils.m */; };
 		9F96DFC61EA9E28A001105CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96DFC51EA9E28A001105CA /* main.m */; };
@@ -27,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		170EE3003F89E8A0F2C4A693 /* Pods-MVVMTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMTest/Pods-MVVMTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9F6C0BB61EB830640005DCB1 /* UINavigationController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Extension.h"; sourceTree = "<group>"; };
+		9F6C0BB71EB830640005DCB1 /* UINavigationController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Extension.m"; sourceTree = "<group>"; };
 		9F7844241EB2ED87002BF98D /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
 		9F7844251EB2ED87002BF98D /* UserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
 		9F95A61F1EB1D98400901794 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
@@ -199,6 +202,8 @@
 			children = (
 				9F95A61F1EB1D98400901794 /* Utils.h */,
 				9F95A6201EB1D98400901794 /* Utils.m */,
+				9F6C0BB61EB830640005DCB1 /* UINavigationController+Extension.h */,
+				9F6C0BB71EB830640005DCB1 /* UINavigationController+Extension.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 				9F96DFC61EA9E28A001105CA /* main.m in Sources */,
 				9F96E05B1EA9EB52001105CA /* GTModel.m in Sources */,
 				9F96E0041EA9EADE001105CA /* GTViewModelClass.m in Sources */,
+				9F6C0BB81EB830640005DCB1 /* UINavigationController+Extension.m in Sources */,
 				9FCBD3331EAF5400000DF29F /* UserInfoViewModel.m in Sources */,
 				9FCBD3321EAF5400000DF29F /* UserModel.m in Sources */,
 				9F96DFD21EA9E28A001105CA /* MVVMTest.xcdatamodeld in Sources */,

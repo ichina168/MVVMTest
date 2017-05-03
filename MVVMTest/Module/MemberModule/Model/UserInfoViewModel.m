@@ -20,13 +20,12 @@
         DDLog(@"%@",returnValue);
         //直接字典转模型,并会传
         self.returnBlock([UserModel mj_objectWithKeyValues:returnValue]);
-        
     }];
     
 }
 
 - (void)userDetailWithUserModel:(UserModel *)userModel WithViewController:(UIViewController *)superController{
-    
+    [superController.navigationController  naviagteToWithPageName:UserInfoVC withParam:userModel];
 }
 
 

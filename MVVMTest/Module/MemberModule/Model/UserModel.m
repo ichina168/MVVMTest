@@ -10,7 +10,6 @@
 
 @implementation User
 
-
 @end
 
 @implementation UserModel

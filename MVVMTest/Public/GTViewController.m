@@ -13,6 +13,13 @@
 @end
 
 @implementation GTViewController
+- (void)NavigateBack:(id)param withFromClassName:(Class)c{
+
+}
+
+- (void)NavigateTo:(id)param withFromClassName:(Class)c{
+
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
