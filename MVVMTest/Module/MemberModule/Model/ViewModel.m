@@ -6,9 +6,9 @@
 //  Copyright © 2017年 Allen. All rights reserved.
 //
 
-#import "UserinfoViewModel.h"
+#import "ViewModel.h"
 
-@implementation UserInfoViewModel : GTViewModelClass
+@implementation ViewModel : GTViewModel
 
 
 - (void)fetchLogin{
@@ -24,10 +24,23 @@
     
 }
 
-- (void)userDetailWithUserModel:(UserModel *)userModel WithViewController:(UIViewController *)superController{
+- (void)userInfoWithUserModel:(UserModel *)userModel WithViewController:(UIViewController *)superController{
     [superController.navigationController  naviagteToWithPageName:UserInfoVC withParam:userModel];
 }
 
 
+- (void)fetchWeb{
+    WebModel *webModel = [WebModel new];
+    webModel.result = @"0";
+    webModel.message = @"成功";
+    Web *web = [Web new];
+    web.url = @"https://www.baidu.com";
+    webModel.responseData = web;
+    self.returnBlock(webModel);
+}
+
+- (void)webViewWithWebModel:(WebModel *)webModel WithViewController:(UIViewController *)superController{
+    [superController.navigationController  naviagteToWithPageName:WebViewVC withParam:webModel];
+}
 
 @end

@@ -13,16 +13,18 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #import <UIKit/UIKit.h>
+#import <ReactiveCocoa.h>
 #import "Config.h"
 #import "Utils.h"
 #import "AFNetworking.h"
 #import "UIKit+AFNetworking.h"
 #import "MJExtension.h"
 #import "NetRequestClass.h"
-#import "GTViewModelClass.h"
+#import "GTViewModel.h"
 #import "GTViewController.h"
 
 #import "UserModel.h"
+#import "WebModel.h"
 
 
 #endif /* PrefixHeader_pch */

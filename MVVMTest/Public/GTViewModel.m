@@ -4,10 +4,10 @@
 //
 //
 
-#import "GTViewModelClass.h"
+#import "GTViewModel.h"
 
 
-@implementation GTViewModelClass
+@implementation GTViewModel
 
 #pragma 获取网络可到达状态
 -(void) netWorkStateWithNetConnectBlock: (NetWorkBlock) netConnectBlock WithURlStr: (NSString *) strURl;

@@ -49,6 +49,9 @@
 
 - (UIViewController *)CreateVCWithXIB:(NSString *)xibName{
     UIViewController *control=[(UIViewController *)[NSClassFromString(xibName) alloc] init];
+    if (control==nil) {
+        control =[(UIViewController *)[NSClassFromString(ErrorVC) alloc] init];
+    }
     return control;
     
 }

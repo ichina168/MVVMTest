@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "UserinfoViewModel.h"
-#import <ReactiveCocoa.h>
+#import "ViewModel.h"
+
 
 
 @interface ViewController ()
@@ -30,18 +30,31 @@
     [super viewDidLoad];
     
     // Do any additional setup after loading the view, typically from a nib.
-    UserInfoViewModel *userInfoViewModel = [[UserInfoViewModel alloc] init];
+    ViewModel *viewModel = [[ViewModel alloc] init];
     __block UserModel *userModel = nil;
-    [userInfoViewModel setBlockWithReturnBlock:^(id returnValue) {
-        userModel = returnValue;
-        if (![userModel.result isEqualToString:@"0"]) {
-            [Utils showAlert:userModel.message];
-            return ;
+    __block WebModel *webModel = nil;
+    [viewModel setBlockWithReturnBlock:^(id returnValue) {
+        
+        if ([returnValue isKindOfClass:[userModel class]]) {
+            userModel = returnValue;
+            if (![userModel.result isEqualToString:@"0"]) {
+                [Utils showAlert:userModel.message];
+                return ;
+            }
+            DDLog(@"%@-%@-%@",userModel.result,userModel.message,userModel.responseData.idCard);
+        }else if ([returnValue isKindOfClass:[WebModel class]]){
+            webModel = returnValue;
+            if (![webModel.result isEqualToString:@"0"]) {
+                [Utils showAlert:webModel.message];
+                return;
+            }
+            DDLog(@"%@",webModel.responseData.url);
         }
-        DDLog(@"%@-%@-%@",userModel.result,userModel.message,userModel.responseData.idCard);
     }];
     
-    [userInfoViewModel fetchLogin];
+    [viewModel fetchLogin];
+    [viewModel fetchWeb];
+    
     
     UIButton *buttonA = [UIButton buttonWithType:UIButtonTypeCustom];
     [buttonA setFrame:CGRectMake(10, 70, 100, 40)];
@@ -49,7 +62,7 @@
     [buttonA setBackgroundColor:[UIColor grayColor]];
     [self.view addSubview:buttonA];
     [[buttonA rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        [userInfoViewModel userDetailWithUserModel:userModel WithViewController:self];
+        [viewModel userInfoWithUserModel:userModel WithViewController:self];
     }];
     
     
@@ -59,7 +72,7 @@
     [buttonB setBackgroundColor:[UIColor grayColor]];
     [self.view addSubview:buttonB];
     [[buttonB rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        
+        [viewModel webViewWithWebModel:webModel WithViewController:self];
     }];
     
     

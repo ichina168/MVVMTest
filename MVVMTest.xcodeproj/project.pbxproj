@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F6542EA1EB988BE00B84B69 /* WebViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6542E91EB988BE00B84B69 /* WebViewViewController.m */; };
+		9F6542ED1EB98A4600B84B69 /* WebViewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6542EC1EB98A4600B84B69 /* WebViewViewModel.m */; };
+		9F6542F01EB98B2A00B84B69 /* WebModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6542EF1EB98B2A00B84B69 /* WebModel.m */; };
+		9F6542F31EB99ECA00B84B69 /* UserInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6542F21EB99ECA00B84B69 /* UserInfoViewModel.m */; };
+		9F6542F61EB9ADA200B84B69 /* ErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6542F51EB9ADA200B84B69 /* ErrorViewController.m */; };
 		9F6C0BB81EB830640005DCB1 /* UINavigationController+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6C0BB71EB830640005DCB1 /* UINavigationController+Extension.m */; };
 		9F7844261EB2ED87002BF98D /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7844251EB2ED87002BF98D /* UserInfoViewController.m */; };
 		9F95A6211EB1D98400901794 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F95A6201EB1D98400901794 /* Utils.m */; };
@@ -16,18 +21,28 @@
 		9F96DFD21EA9E28A001105CA /* MVVMTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F96DFD01EA9E28A001105CA /* MVVMTest.xcdatamodeld */; };
 		9F96DFD41EA9E28A001105CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F96DFD31EA9E28A001105CA /* Assets.xcassets */; };
 		9F96DFD71EA9E28A001105CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F96DFD51EA9E28A001105CA /* LaunchScreen.storyboard */; };
-		9F96E0041EA9EADE001105CA /* GTViewModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E0031EA9EADE001105CA /* GTViewModelClass.m */; };
+		9F96E0041EA9EADE001105CA /* GTViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E0031EA9EADE001105CA /* GTViewModel.m */; };
 		9F96E0421EA9EAFF001105CA /* NetRequestClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E0131EA9EAFF001105CA /* NetRequestClass.m */; };
 		9F96E0581EA9EB27001105CA /* GTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E0571EA9EB27001105CA /* GTViewController.m */; };
 		9F96E05B1EA9EB52001105CA /* GTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F96E05A1EA9EB52001105CA /* GTModel.m */; };
 		9FCBD3321EAF5400000DF29F /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD32A1EAF5400000DF29F /* UserModel.m */; };
-		9FCBD3331EAF5400000DF29F /* UserInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD32C1EAF5400000DF29F /* UserInfoViewModel.m */; };
+		9FCBD3331EAF5400000DF29F /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD32C1EAF5400000DF29F /* ViewModel.m */; };
 		9FCBD3341EAF5400000DF29F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FCBD3301EAF5400000DF29F /* ViewController.m */; };
 		DE1567A9DEF185DBAFD229B8 /* libPods-MVVMTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B94259586A36A1CE6AB01B74 /* libPods-MVVMTest.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		170EE3003F89E8A0F2C4A693 /* Pods-MVVMTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVMTest/Pods-MVVMTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9F6542E81EB988BE00B84B69 /* WebViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewViewController.h; sourceTree = "<group>"; };
+		9F6542E91EB988BE00B84B69 /* WebViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewViewController.m; sourceTree = "<group>"; };
+		9F6542EB1EB98A4600B84B69 /* WebViewViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewViewModel.h; sourceTree = "<group>"; };
+		9F6542EC1EB98A4600B84B69 /* WebViewViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewViewModel.m; sourceTree = "<group>"; };
+		9F6542EE1EB98B2A00B84B69 /* WebModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebModel.h; sourceTree = "<group>"; };
+		9F6542EF1EB98B2A00B84B69 /* WebModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebModel.m; sourceTree = "<group>"; };
+		9F6542F11EB99ECA00B84B69 /* UserInfoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewModel.h; sourceTree = "<group>"; };
+		9F6542F21EB99ECA00B84B69 /* UserInfoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewModel.m; sourceTree = "<group>"; };
+		9F6542F41EB9ADA200B84B69 /* ErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ErrorViewController.h; sourceTree = "<group>"; };
+		9F6542F51EB9ADA200B84B69 /* ErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ErrorViewController.m; sourceTree = "<group>"; };
 		9F6C0BB61EB830640005DCB1 /* UINavigationController+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Extension.h"; sourceTree = "<group>"; };
 		9F6C0BB71EB830640005DCB1 /* UINavigationController+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Extension.m"; sourceTree = "<group>"; };
 		9F7844241EB2ED87002BF98D /* UserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
@@ -43,8 +58,8 @@
 		9F96DFD31EA9E28A001105CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F96DFD61EA9E28A001105CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F96DFD81EA9E28A001105CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F96E0021EA9EADE001105CA /* GTViewModelClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTViewModelClass.h; sourceTree = "<group>"; };
-		9F96E0031EA9EADE001105CA /* GTViewModelClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTViewModelClass.m; sourceTree = "<group>"; };
+		9F96E0021EA9EADE001105CA /* GTViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTViewModel.h; sourceTree = "<group>"; };
+		9F96E0031EA9EADE001105CA /* GTViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTViewModel.m; sourceTree = "<group>"; };
 		9F96E0061EA9EAFF001105CA /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
 		9F96E0121EA9EAFF001105CA /* NetRequestClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetRequestClass.h; sourceTree = "<group>"; };
 		9F96E0131EA9EAFF001105CA /* NetRequestClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetRequestClass.m; sourceTree = "<group>"; };
@@ -55,8 +70,8 @@
 		9F96E05E1EA9F30E001105CA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9FCBD3291EAF5400000DF29F /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
 		9FCBD32A1EAF5400000DF29F /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
-		9FCBD32B1EAF5400000DF29F /* UserInfoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfoViewModel.h; path = ../Model/UserInfoViewModel.h; sourceTree = "<group>"; };
-		9FCBD32C1EAF5400000DF29F /* UserInfoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfoViewModel.m; path = ../Model/UserInfoViewModel.m; sourceTree = "<group>"; };
+		9FCBD32B1EAF5400000DF29F /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewModel.h; path = ../Model/ViewModel.h; sourceTree = "<group>"; };
+		9FCBD32C1EAF5400000DF29F /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewModel.m; path = ../Model/ViewModel.m; sourceTree = "<group>"; };
 		9FCBD32F1EAF5400000DF29F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9FCBD3301EAF5400000DF29F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B94259586A36A1CE6AB01B74 /* libPods-MVVMTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MVVMTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,8 +157,8 @@
 		9F96E0011EA9EADE001105CA /* PublicTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				9F96E0021EA9EADE001105CA /* GTViewModelClass.h */,
-				9F96E0031EA9EADE001105CA /* GTViewModelClass.m */,
+				9F96E0021EA9EADE001105CA /* GTViewModel.h */,
+				9F96E0031EA9EADE001105CA /* GTViewModel.m */,
 				9F96E0561EA9EB27001105CA /* GTViewController.h */,
 				9F96E0571EA9EB27001105CA /* GTViewController.m */,
 				9F96E0591EA9EB52001105CA /* GTModel.h */,
@@ -213,6 +228,8 @@
 			children = (
 				9FCBD3291EAF5400000DF29F /* UserModel.h */,
 				9FCBD32A1EAF5400000DF29F /* UserModel.m */,
+				9F6542EE1EB98B2A00B84B69 /* WebModel.h */,
+				9F6542EF1EB98B2A00B84B69 /* WebModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,6 +248,10 @@
 				9FCBD3301EAF5400000DF29F /* ViewController.m */,
 				9F7844241EB2ED87002BF98D /* UserInfoViewController.h */,
 				9F7844251EB2ED87002BF98D /* UserInfoViewController.m */,
+				9F6542E81EB988BE00B84B69 /* WebViewViewController.h */,
+				9F6542E91EB988BE00B84B69 /* WebViewViewController.m */,
+				9F6542F41EB9ADA200B84B69 /* ErrorViewController.h */,
+				9F6542F51EB9ADA200B84B69 /* ErrorViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -238,8 +259,12 @@
 		9FCBD3311EAF5400000DF29F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				9FCBD32B1EAF5400000DF29F /* UserInfoViewModel.h */,
-				9FCBD32C1EAF5400000DF29F /* UserInfoViewModel.m */,
+				9FCBD32B1EAF5400000DF29F /* ViewModel.h */,
+				9FCBD32C1EAF5400000DF29F /* ViewModel.m */,
+				9F6542EB1EB98A4600B84B69 /* WebViewViewModel.h */,
+				9F6542EC1EB98A4600B84B69 /* WebViewViewModel.m */,
+				9F6542F11EB99ECA00B84B69 /* UserInfoViewModel.h */,
+				9F6542F21EB99ECA00B84B69 /* UserInfoViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -371,13 +396,18 @@
 				9F95A6211EB1D98400901794 /* Utils.m in Sources */,
 				9F96E0421EA9EAFF001105CA /* NetRequestClass.m in Sources */,
 				9F96DFC91EA9E28A001105CA /* AppDelegate.m in Sources */,
+				9F6542F01EB98B2A00B84B69 /* WebModel.m in Sources */,
 				9F96E0581EA9EB27001105CA /* GTViewController.m in Sources */,
 				9F7844261EB2ED87002BF98D /* UserInfoViewController.m in Sources */,
+				9F6542ED1EB98A4600B84B69 /* WebViewViewModel.m in Sources */,
 				9F96DFC61EA9E28A001105CA /* main.m in Sources */,
 				9F96E05B1EA9EB52001105CA /* GTModel.m in Sources */,
-				9F96E0041EA9EADE001105CA /* GTViewModelClass.m in Sources */,
+				9F6542EA1EB988BE00B84B69 /* WebViewViewController.m in Sources */,
+				9F96E0041EA9EADE001105CA /* GTViewModel.m in Sources */,
 				9F6C0BB81EB830640005DCB1 /* UINavigationController+Extension.m in Sources */,
-				9FCBD3331EAF5400000DF29F /* UserInfoViewModel.m in Sources */,
+				9FCBD3331EAF5400000DF29F /* ViewModel.m in Sources */,
+				9F6542F31EB99ECA00B84B69 /* UserInfoViewModel.m in Sources */,
+				9F6542F61EB9ADA200B84B69 /* ErrorViewController.m in Sources */,
 				9FCBD3321EAF5400000DF29F /* UserModel.m in Sources */,
 				9F96DFD21EA9E28A001105CA /* MVVMTest.xcdatamodeld in Sources */,
 			);

@@ -27,5 +27,7 @@ typedef void (^NetWorkBlock)(BOOL netConnetState);
 #define COUNT @"password"
 
 #define UserInfoVC  @"UserInfoViewController"
+#define WebViewVC   @"WebViewViewController"
+#define ErrorVC     @"ErrorViewController"
 
 #endif

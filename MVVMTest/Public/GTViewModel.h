@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GTViewModelClass : NSObject
+@interface GTViewModel : NSObject
 
 @property (strong, nonatomic) ReturnValueBlock returnBlock;
 
